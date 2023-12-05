@@ -8,14 +8,16 @@ dependencies:
   - requests
   - ipykernel
   - ipywidgets
+  - openssl=1.1.1w
   - pip:
-    - torch>=2
+    - transformers
+    - torch
     - torchvision
     - scipy
     - matplotlib
     - python-dotenv
     - pillow
-    - pandas>=2
+    - pandas
     - openpyxl
-    - pyproj>=2
+    - pyproj
     - tqdm

@@ -84,11 +84,6 @@ def create_images(data_file = '', output_path = ''):
         if not os.path.exists(output_path):
             os.mkdir(output_path)
             
-        kevin_images = os.path.join(output_path, 'kevin')
-        
-        if not os.path.exists(kevin_images):
-            os.mkdir(kevin_images)
-            
         for name, struc in all_structures.items():
             #subfolder_name = os.path.join(output_path, name)
             #if not os.path.exists(subfolder_name):
@@ -102,7 +97,7 @@ def create_images(data_file = '', output_path = ''):
                         heading = struc['heading'][i],
                         pitch = struc['pitch'],
                         show = False,
-                        save_path = os.path.join(kevin_images, f'{name}_{i}_{index}.jpg')
+                        save_path = os.path.join(output_path, f'kevin_images_{name}_{i}_{index}.jpg')
                     )
 # %%
 if __name__== "__main__":
